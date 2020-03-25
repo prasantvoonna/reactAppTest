@@ -10,6 +10,10 @@ import HelloCompTest from "./customComponents/componentTest.js";
 import ReactConstTest from "./customComponents/reactConstTest.js";
 import EmployeeTest from "./customComponents/employeeTest.js";
 import StateTest from "./customComponents/stateTest.js";
+import PropTest from "./customComponents/propTest.js";
+import LifecycleTest from "./customComponents/lifecycleTest.js";
+import LifecycleTestWithDifferentStage from "./customComponents/lifecycleTestWithDifferentStage.js";
+import NestedComponentWithPropsParent from "./customComponents/nestedComponentWithPropsParent.js";
 
 const hi = <h1>Hello World !!</h1>
 ReactDOM1.render(hi, document.getElementById('root'));
@@ -73,4 +77,12 @@ ReactDOM1.render(<ReactConstTest></ReactConstTest>, document.getElementById('roo
 ReactDOM1.render(<EmployeeTest></EmployeeTest>, document.getElementById('root8'));
 
 ReactDOM1.render(<StateTest></StateTest>, document.getElementById('root9'));
+
+ReactDOM1.render(<PropTest name="Prasant" fruit="Mango"></PropTest>, document.getElementById('root10'));
+
+ReactDOM1.render(<LifecycleTest/>, document.getElementById('root11'));
+
+ReactDOM1.render(<LifecycleTestWithDifferentStage/>, document.getElementById('root12'));
+ReactDOM1.render(<NestedComponentWithPropsParent/>, document.getElementById('root13'));
+
 
