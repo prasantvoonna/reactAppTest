@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
-
-
 var course = [  {id: 1, name: "Angular", educator: "Rob"},
     {id: 2, name: "ReactJS", educator: "John"},
     {id: 3, name: "Ajax", educator: "Mack"}

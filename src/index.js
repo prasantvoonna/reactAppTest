@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM1 from 'react-dom';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,6 +15,14 @@ import PropTest from "./customComponents/propTest.js";
 import LifecycleTest from "./customComponents/lifecycleTest.js";
 import LifecycleTestWithDifferentStage from "./customComponents/lifecycleTestWithDifferentStage.js";
 import NestedComponentWithPropsParent from "./customComponents/nestedComponentWithPropsParent.js";
+import RouterTest from "./customComponents/routerTest.js";
+
+import FormTest from "./customComponents/formTest.js";
+import AxiosGet from "./customComponents/axiosGet.js";
+
+/*
+import FormErrorTest from "./customComponents/formErrorTest.js";
+*/
 
 const hi = <h1>Hello World !!</h1>
 ReactDOM1.render(hi, document.getElementById('root'));
@@ -84,5 +93,11 @@ ReactDOM1.render(<LifecycleTest/>, document.getElementById('root11'));
 
 ReactDOM1.render(<LifecycleTestWithDifferentStage/>, document.getElementById('root12'));
 ReactDOM1.render(<NestedComponentWithPropsParent/>, document.getElementById('root13'));
+ReactDOM1.render( <BrowserRouter>
+    <RouterTest />
+</BrowserRouter>, document.getElementById('root14'));
+ ReactDOM1.render(<FormTest/>, document.getElementById('root15'));
+// ReactDOM1.render(<FormErrorTest/>, document.getElementById('root16'));
+ReactDOM1.render(<AxiosGet/>, document.getElementById('root17'));
 
 

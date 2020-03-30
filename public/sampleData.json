@@ -1,0 +1,18 @@
+[
+  {
+    "empId": 101,
+    "empName": "Prasant",
+    "achievements": "Has got 3 bravo awards",
+    "salary": 150000,
+    "age": 30,
+    "image": "emp1.png"
+  },
+  {
+    "empId": 102,
+    "empName": "Praveen",
+    "achievements": "JavaScript expert",
+    "salary": 15000,
+    "age": 29,
+    "image": "img9.png"
+  }
+]
