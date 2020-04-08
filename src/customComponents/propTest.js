@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 class propTest extends Component {
-   /* constructor(props) {
+    constructor(props) {
         super(props);
-    }*/ //working without constructor
+
+    }
+    increment(){
+        if(this.props.numEX)
+        this.props.numEx++;
+    }
     render() {
         return (
             <h4 className="text-center">

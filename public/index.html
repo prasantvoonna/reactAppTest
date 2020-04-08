@@ -25,12 +25,74 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .hidden{
+        display: none;
+      }
+    </style>
+    <script>
+      var DataArr = [
+        {
+          "patientId": "COR-00001",
+          "patientName": "Prasant",
+          "admissionDate": "4/5/2020",
+          "reportStatus": "Negative",
+          "age": 27,
+          "archived" : false
+        },
+        {
+          "patientId":"COR-00002",
+          "patientName": "Praveen",
+          "admissionDate": "6/5/2020",
+          "reportStatus": "Negative",
+          "age": 25,
+          "archived" : false
+        },
+        {
+          "patientId": "COR-00003",
+          "patientName": "Ravi",
+          "admissionDate": "10/5/2020",
+          "reportStatus": "TestInProgress",
+          "age": 26,
+          "archived" : false
+        },
+        {
+          "patientId": "COR-00004",
+          "patientName": "Kumaran",
+          "admissionDate": "2/5/2020",
+          "reportStatus": "Positive",
+          "age": 45,
+          "archived" : false
+        },
+        {
+          "patientId": "COR-00005",
+          "patientName": "Rama",
+          "admissionDate": "10/4/2020",
+          "reportStatus": "Recovered",
+          "age": 89,
+          "archived" : false
+        },
+        {
+          "patientId": "COR-00006",
+          "patientName": "Gouri",
+          "admissionDate": "5/4/2020",
+          "reportStatus": "Recovered",
+          "age": 69,
+          "archived" : false
+        }
+      ];
+      localStorage.setItem('patients', JSON.stringify(DataArr));
+
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
+<!--
     ==============================DAY1=========================
+-->
     <div id="root"></div>
+<!--
     <div id="root1"></div>
     <div id="root2"></div>
     <div id="root3"></div>
@@ -49,8 +111,9 @@
     ==============================DAY4 and 5=========================
  <div id="root14"></div>
   <div id="root15"></div>
-<!--    <div id="root16"></div>-->
+&lt;!&ndash;    <div id="root16"></div>&ndash;&gt;
     <div id="root17"></div>
+-->
 
 
     <!--

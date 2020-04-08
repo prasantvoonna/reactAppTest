@@ -5,7 +5,7 @@ var course = [  {name: "Angular", educator: "Rob"},
     {name: "ReactJS"},
     {name: undefined, educator: null}
 ];
-class lifecycleTest extends React.Component {
+class LifecycleTest extends React.Component {
     constructor() {
         super();
         this.state = { courseData: course };
@@ -27,4 +27,4 @@ class lifecycleTest extends React.Component {
         );
     }
 }
-export default lifecycleTest;
+export default LifecycleTest;

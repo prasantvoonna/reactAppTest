@@ -1,0 +1,37 @@
+[
+  {
+    "patientId": 1,
+    "patientName": "Prasant",
+    "admissionDate": "04/05/2020",
+    "reportStatus": "Negative",
+    "age": 27
+  },
+  {
+    "patientId": 2,
+    "patientName": "Praveen",
+    "admissionDate": "06/05/2020",
+    "reportStatus": "Negative",
+    "age": 25
+  },
+  {
+    "patientId": 3,
+    "patientName": "Ravi",
+    "admissionDate": "10/05/2020",
+    "reportStatus": "Test In Progress",
+    "age": 26
+  },
+  {
+  "patientId": 4,
+  "patientName": "Kumaran",
+  "admissionDate": "02/05/2020",
+  "reportStatus": "Positive",
+  "age": 45
+  },
+  {
+    "patientId": 5,
+    "patientName": "Rama",
+    "admissionDate": "10/04/2020",
+    "reportStatus": "Recovered",
+    "age": 89
+  }
+]
