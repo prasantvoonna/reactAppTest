@@ -1,6 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import PatientStatics from "./patientStatics";
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import Pdf from "react-to-pdf";
+const refPdf = React.createRef();
+const options = {
+    orientation: 'landscape'
+    /*unit: 'in',
+    format: [4,2]*/
+};
 
 class PatientList extends React.Component{
     constructor(props) {
@@ -44,7 +52,7 @@ class PatientList extends React.Component{
                     </div>
                 </div>
                 <div className="col-12">
-                    <table className="table">
+                    <table ref={refPdf} id="patientList" className="table">
                         <thead>
                             <tr>
                                 <th>Sl No</th>
@@ -88,6 +96,19 @@ class PatientList extends React.Component{
                 <div className="row">
                     <PatientStatics totalPatients={this.getTotalPatients()} _totalActivePatients={this.getTotalActive()} totalRecoveredPatients={this.getTotalRecovered()}></PatientStatics>
                 </div>
+
+
+                <ReactHTMLTableToExcel
+                    id="test-table-xls-button"
+                    className="download-table-xls-button btn btn-primary"
+                    table="patientList"
+                    filename="patientList"
+                    sheet="patientList"
+                    buttonText="Download Patient List As XLS"/>
+                {"  |  "}
+                <Pdf targetRef={refPdf} options={options} filename="patientList.pdf">
+                    {({ toPdf }) => <button className="btn btn-primary" onClick={toPdf}>Download Patient List As Pdf</button>}
+                </Pdf>
             </>
         );
     }

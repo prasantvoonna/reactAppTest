@@ -130,11 +130,13 @@ class NewPatientForm extends  React.Component {
                               onChange={this.handleChange}
                               error={this.state.errors.patientName}/>
                 <CustomInputs type="date"
+                              format='dd/mm/yyyy'
                               label="Admission Date"
                               name="admissionDate"
                               value={this.state.admissionDate}
                               onChange={this.handleChange}
                               error={this.state.errors.admissionDate}/>
+
 
                 <CustomInputs type="text"
                               label="Patient Age"
