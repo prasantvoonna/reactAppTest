@@ -16,7 +16,7 @@
     "react-scripts": "3.4.0",
     "react-to-pdf": "0.0.11",
     "react-toastify": "^5.5.0",
-    "xlsx": "^0.15.6"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
